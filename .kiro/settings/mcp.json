@@ -1,13 +1,3 @@
 {
-  "mcpServers": {
-    "shell": {
-      "command": "uvx",
-      "args": ["--from", "mcp-server-shell", "mcp-server-shell"],
-      "env": {
-        "FASTMCP_LOG_LEVEL": "ERROR"
-      },
-      "disabled": false,
-      "autoApprove": ["shell_execute"]
-    }
-  }
+  "mcpServers": {}
 }

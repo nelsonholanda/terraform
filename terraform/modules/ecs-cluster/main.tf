@@ -17,7 +17,7 @@ resource "aws_ecs_cluster" "main" {
 # User data script for ECS instances
 locals {
   user_data = base64encode(<<-EOF
-    #!/bin/bash
+    #!/bin/sh
     echo ECS_CLUSTER=${var.cluster_name} >> /etc/ecs/ecs.config
     sudo dd if=/dev/zero of=/swapfile bs=128M count=32
     sudo chmod 600 /swapfile
