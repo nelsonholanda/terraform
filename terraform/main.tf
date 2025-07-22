@@ -7,6 +7,12 @@ terraform {
       version = "~> 5.0"
     }
   }
+  
+  backend "s3" {
+    bucket = "tf-nh"
+    key    = "kiro-tf-bia/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
